@@ -1,4 +1,6 @@
 # algoritm
 
+branch naming `<labXX>/<nickname>`
 
-`lab01/<username>` 
+dir naming `lab01/<nickname>` 
+
