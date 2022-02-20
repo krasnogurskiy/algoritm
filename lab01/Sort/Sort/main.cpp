@@ -8,8 +8,9 @@ int main() {
 
 	//BublleSort(Arr, Size);
 	//QuickSort(Arr, 0, Size - 1);
-	ShellSort(Arr, Size);
+	//ShellSort(Arr, Size);
+	RadixSort(Arr, Size);
 	PrintArrays(Arr, Size);
-
+	//std::cout << GetMax(Arr, Size);
 	return 0;
 }
