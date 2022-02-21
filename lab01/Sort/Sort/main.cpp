@@ -12,5 +12,6 @@ int main() {
 	RadixSort(Arr, Size);
 	PrintArrays(Arr, Size);
 	//std::cout << GetMax(Arr, Size);
+	delete[] Arr;
 	return 0;
 }
