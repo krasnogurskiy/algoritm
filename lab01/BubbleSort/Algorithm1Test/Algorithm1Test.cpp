@@ -25,17 +25,24 @@ namespace Algorithm1Test
 			int arr[5] = { 2,1,3,8,6};
 
 			bubbleSort(arr, 5);
-
-			Assert::AreEqual(arr[3],6);
+			Assert::AreEqual(arr[3], 6);
+			Assert::AreEqual(arr[1], 2);
+			Assert::AreEqual(arr[2], 3);
+			Assert::AreEqual(arr[0], 1);
+			Assert::AreEqual(arr[4], 8);
 		}
 
 		TEST_METHOD(TestMethod3)
 		{
-			int arr[5] = { 2,1,3,8,6 };
+			int arr[5] = { -2,-1,-3,-8,-6 };
 
-			printArray(arr, 5);
+			bubbleSort(arr, 5);
 
-			Assert::AreEqual(arr[3], 8);
+			Assert::AreEqual(arr[1], -6);
+			Assert::AreEqual(arr[2], -3);
+			Assert::AreEqual(arr[0], -8);
+			Assert::AreEqual(arr[4], -1);
+			Assert::AreEqual(arr[3], -2);
 		}
 	};
 }
