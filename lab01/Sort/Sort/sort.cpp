@@ -1,5 +1,4 @@
 #include <iostream>
-#include <ctime>
 #include "sort.h"
 
 
@@ -10,11 +9,26 @@ void PrintArrays(int* arr, int n) {
 	std::cout << "\n\n";
 }
 
+void Swap(int* fir, int* sec) {
+	int temp = *fir;
+	*fir = *sec;
+	*sec = temp;
+}
+void ReverseSortArray(int* arr, int n) {
+	int j = n - 1;
+	for (int i = 0; i < n/2; ++i) {
+			int temp = arr[i];
+			arr[i] = arr[j];
+			arr[j] = temp;
+			--j;
+	}
+}
+
 void BublleSort(int* arr, int n) {
 	for (int i = 0; i < n; ++i) {
 		for (int j = n - 1; j > i; --j) {
 			if (arr[j] < arr[j - 1]) {
-				std::swap(arr[j], arr[j - 1]);
+				Swap(&arr[j], &arr[j - 1]);
 			}
 		}
 	}
@@ -32,7 +46,7 @@ void QuickSort(int* arr, int FirstIndex, int LastIndex) {
 			++i;
 		}
 		if (i <= j) {
-			std::swap(arr[i], arr[j]);
+			Swap(&arr[i], &arr[j]);
 			++i;
 			--j;
 		}
