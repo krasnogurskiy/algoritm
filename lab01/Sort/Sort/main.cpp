@@ -16,6 +16,6 @@ int main() {
 	ReverseSortArray(Arr, Size);
 	PrintArrays(Arr, Size);
 	//std::cout << GetMax(Arr, Size);
-	delete[] Arr;
+	//delete[] Arr;
 	return 0;
 }
