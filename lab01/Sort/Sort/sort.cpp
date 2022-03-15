@@ -60,16 +60,14 @@ void QuickSort(int* arr, int FirstIndex, int LastIndex) {
 }
 
 void ShellSort(int* arr, int n) {
-	int Group, i, j, count;
+	int Group, i, j;
 	Group = n;
 	Group = Group / 2;
 	while (Group > 0) {
 		for (i = 0; i < n - Group; ++i) {
 			j = i;
 			while (j >= 0 && arr[j] > arr[j + Group]) {
-				count = arr[j];
-				arr[j] = arr[j + Group];
-				arr[j + Group] = count;
+				Swap(&arr[j], &arr[j + Group]);
 				--j;
 			}
 		}
