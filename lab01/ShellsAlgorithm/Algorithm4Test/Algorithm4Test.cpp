@@ -1,6 +1,7 @@
 #include "pch.h"
 #include "CppUnitTest.h"
 #include "..\\algorithm4.h"
+#include "..\\SortingAlgorithm\algorithm1.h"
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 

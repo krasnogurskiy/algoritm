@@ -1,1 +1,1 @@
-﻿  Algorithm1Test.vcxproj -> D:\prog\Algorithm1\Debug\Algorithm1Test.dll
+﻿LINK : fatal error LNK1104: cannot open file 'D:\prog\Algorithm1\SortingAlgorithm\Debug\algorithm1.obj'

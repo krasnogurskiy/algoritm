@@ -1,2 +1,1 @@
-﻿  Algorithm3Test.cpp
-  Algorithm3Test.vcxproj -> D:\prog\Algorithm33\Debug\Algorithm3Test.dll
+﻿LINK : fatal error LNK1104: cannot open file 'D:\prog\Algorithm33\Debug\algorithm3.obj'
